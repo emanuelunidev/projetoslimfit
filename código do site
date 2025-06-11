@@ -1,74 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Slimfit</title>
-    <link href="https://fonts.google.com/specimen/Cal+Sans" rel="stylesheet">
-
+    <title>Slimfit - Roupas Masculinas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Projeto Slimfit</h1>
-    <style>
-body {font-family: 'Roboto', sans-serif; background-color: #f4f4f4; color: #333; font-size: 20px; line-height: 1.5;}
+    <header>
+        <div class="container">
+            <h1>Slimfit</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-h1 {text-align: center; color: #333; font-size: 2.5em; margin-top: 20px;}
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>O Estilo que Veste Você</h2>
+                <p>Descubra as últimas tendências em moda masculina.</p>
+                <a href="#products" class="btn">Ver Produtos</a>
+            </div>
+        </section>
 
-        .container {
-            display: flex;
-            gap: 20px;
-            margin: 20px;
+        <section id="products">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="imagens/camiseta-basica.jpg" alt="Camiseta Básica Slimfit">
+                        <h3>Camiseta Básica</h3>
+                        <p>R$ 79,90</p>
+                        <button class="btn">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="imagens/calca-jeans-slim.jpg" alt="Calça Jeans Slimfit">
+                        <h3>Calça Jeans Slim</h3>
+                        <p>R$ 149,90</p>
+                        <button class="btn">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="imagens/blazer-elegante.jpg" alt="Blazer Elegante Slimfit">
+                        <h3>Blazer Elegante</h3>
+                        <p>R$ 299,90</p>
+                        <button class="btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        }
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>A Slimfit oferece roupas masculinas com foco em design moderno e caimento perfeito.</p>
+                <p>Nossa missão é proporcionar estilo e conforto para o homem contemporâneo.</p>
+            </div>
+        </section>
 
-        .column {
-            flex: 1;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-p {text-align: center;}
+        <section id="contact">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>Tem alguma dúvida? Fale conosco!</p>
+                <form>
+                    <input type="text" placeholder="Seu Nome">
+                    <input type="email" placeholder="Seu Email">
+                    <textarea placeholder="Sua Mensagem"></textarea>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-
-    </style>
-    <p>Sua loja de roupa estampadas</p>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Slimfit. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
-<div>
-
-
-
-  <div class="category-row">
-    <div class="category-row"> camisa </div>
-    <div class="category-row"> camisa </div>
-    <div class="category-row"> camisa </div>
-  </div>
-
-<style>
-.category-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-.category {
-
-flex: 1;
-padding: 20px;
-background-color: lightblue;
-color: #fff;
-border-radius: 8px;
-text-align: center;
-font-size: 18px;
-font-weight: bold;
-cursor: pointer;
-transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .category:hover {
-        background-color: #0056b3;
-        transform: scale(1.05); 
-    }
-</style>
